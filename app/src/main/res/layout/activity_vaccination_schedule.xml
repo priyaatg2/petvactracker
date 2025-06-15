@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:text="Vaccination Records"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <!-- Scrollable Vaccination List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ListView for Records -->
+            <ListView
+                android:id="@+id/vaccinationRecordsView"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed Add Vaccination Form at Bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Vaccination Record"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/inputVaccineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vaccine Name"
+        android:padding="12dp"
+        android:background="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputVaccineDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vaccination Date"
+        android:focusable="false"
+        android:clickable="true"
+        android:padding="12dp"
+        android:background="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputNextDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Next Due Date"
+        android:focusable="false"
+        android:clickable="true"
+        android:padding="12dp"
+        android:background="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputDoctorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctor's Name"
+        android:padding="12dp"
+        android:background="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputClinicArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Clinic Area"
+        android:padding="12dp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnAddVaccination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Record"
+        android:textSize="18sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="Vaccination Records"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vaccinationRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No records found"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:paddingHorizontal="15dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Vaccination Record"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/inputVaccineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vaccine Name"
+            android:padding="12dp"
+            android:background="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/inputVaccineDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vaccination Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:background="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/inputNextDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Next Due Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:background="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/inputDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor's Name"
+            android:padding="12dp"
+            android:background="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/inputClinicArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clinic Area"
+            android:padding="12dp"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnAddVaccination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Record"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>  -->

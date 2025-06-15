@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Search for Vet Clinics -->
+        <TextView
+            android:id="@+id/titleTextVetLocator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vet Locator"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="10dp"/>
+
+        <!-- GPS-Based Vet Search -->
+        <Button
+            android:id="@+id/btnFetchLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Find Vets Near Me"
+            android:textColor="@android:color/white"/>
+
+        <!-- Previous Vaccinations -->
+        <TextView
+            android:id="@+id/titleTextPreviousVaccinations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Previous Vaccinations"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="10dp"/>
+
+        <ListView
+            android:id="@+id/previousVaccinationsList"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@android:color/darker_gray"
+            android:padding="10dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+
+        <!-- Vet Clinic Search Results -->
+        <TextView
+            android:id="@+id/titleTextVetClinics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nearby Vet Clinics"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="10dp"/>
+
+        <ListView
+            android:id="@+id/vetListView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:divider="?android:attr/dividerVertical"
+        android:showDividers="middle"
+        android:dividerPadding="12dp"
+        android:background="#3B85E8E0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            app:srcCompat="@drawable/logo" />
+
+        <!-- User Details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/cherry_bomb_one"
+            android:text="REGISTRATION PAGE"
+            android:textColor="#31CFE3"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Full Name" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="324dp"
+            android:layout_height="57dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="330dp"
+            android:layout_height="57dp"
+            android:hint="Create Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <!-- Pet Details -->
+        <EditText
+            android:id="@+id/et_pet_name"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Pet's Name" />
+
+        <Spinner
+            android:id="@+id/spinner_species"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <EditText
+            android:id="@+id/et_pet_breed"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Pet's Breed" />
+
+        <EditText
+            android:id="@+id/et_pet_dob"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Pet's Date of Birth"
+            android:focusable="false"
+            android:clickable="true"
+            android:onClick="showDatePickerDialog" />
+
+        <EditText
+            android:id="@+id/et_pet_email"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Create Pet's Email (Will be used as Username)" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text="Register" />
+    </LinearLayout>
+</ScrollView>

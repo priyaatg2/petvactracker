@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PetVac Tracker</string>
+    <string-array name="species_array">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Rabbit</item>
+    </string-array>
+
+    <string-array name="dog_breeds">
+        <item>Labrador Retriever</item>
+        <item>German Shepherd</item>
+        <item>Golden Retriever</item>
+        <item>Poodle</item>
+        <item>Bulldog</item>
+    </string-array>
+
+    <string-array name="cat_breeds">
+        <item>Persian</item>
+        <item>Maine Coon</item>
+        <item>Siamese</item>
+        <item>Bengal</item>
+        <item>Scottish Fold</item>
+    </string-array>
+
+    <string-array name="rabbit_breeds">
+        <item>Holland Lop</item>
+        <item>Netherland Dwarf</item>
+        <item>Flemish Giant</item>
+        <item>Lionhead</item>
+        <item>Mini Rex</item>
+    </string-array>
+
+    <string-array name="bird_breeds">
+        <item>Budgerigar (Budgie)</item>
+        <item>Cockatiel</item>
+        <item>African Grey Parrot</item>
+        <item>Lovebird</item>
+        <item>Canary</item>
+    </string-array>
+
+</resources>
